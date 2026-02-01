@@ -279,6 +279,56 @@ body {
     font-size: 0.9rem;
 }
 
+.footer {
+    background: #f0f0f0;
+    color: #ccc;
+    margin-top: 4rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.footer-brand h3 {
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.footer-brand p {
+    max-width: 300px;
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-column h4 {
+    color: white;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+}
+
 @media (max-width: 768px) {
 
     .nav {
@@ -332,3 +382,22 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.nav a:hover,
+.footer-column a:hover {
+  color: var(--primary);
+}
+
+.course-card:hover {
+  border-color: var(--primary);
+}
